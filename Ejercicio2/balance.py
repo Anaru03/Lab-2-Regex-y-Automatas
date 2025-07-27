@@ -36,3 +36,16 @@ def balanceador_expresion(expresion):
 def main():
     with open("solu_expre.txt", "r", encoding="utf-8") as txt:
         lineas = txt.readlines()
+
+    for num, linea in enumerate(lineas, start=1):
+        expresion = linea.strip()
+        print(f"\nExpresión {num}: {expresion}")
+        balanceada, pasos = balanceador_expresion(expresion)
+
+        for paso in pasos:
+            print(paso)
+
+        print("Resultado:", "Balanceada ✅" if balanceada else "No balanceada ❌")
+        
+    if __name__ == "__main__":
+        main()
