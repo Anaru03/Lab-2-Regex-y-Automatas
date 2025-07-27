@@ -32,3 +32,7 @@ def balanceador_expresion(expresion):
 
     secuencia.append("Fin: pila vacía → balanceado")
     return True, secuencia
+
+def main():
+    with open("solu_expre.txt", "r", encoding="utf-8") as txt:
+        lineas = txt.readlines()
