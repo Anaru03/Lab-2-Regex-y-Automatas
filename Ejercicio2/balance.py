@@ -45,7 +45,7 @@ def main():
         for paso in pasos:
             print(paso)
 
-        print("Resultado:", "Balanceada ✅" if balanceada else "No balanceada ❌")
-        
-    if __name__ == "__main__":
-        main()
+        print("Resultado:", "✅ Balanceada" if balanceada else "❌ No balanceada")
+
+if __name__ == "__main__":
+    main()
