@@ -95,4 +95,4 @@ ab+c?
 ## 🔗 Referencia
 Pseudocódigo de Shunting Yard adaptado de:  
 [https://gist.github.com/gbrolo/1a80f67f8d0a20d42828fb3fdb7be4de](https://gist.github.com/gbrolo/1a80f67f8d0a20d42828fb3fdb7be4de)
-
+Video desarrollado para la explicación del código: (https://www.youtube.com/watch?v=SGKlfSNpEXM)  
