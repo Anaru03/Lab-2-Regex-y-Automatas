@@ -74,3 +74,14 @@ def infix_to_postfix(regex):
     print(f"Postfix final: {postfix}")
     print("-" * 30)
     return postfix
+
+def procesar_archivo(nombre):
+    with open(nombre, 'r', encoding='utf-8') as f:
+        for linea in f:
+            expresion = linea.strip()
+            if expresion:
+                infix_to_postfix(expresion)
+
+
+if __name__ == "__main__":
+    procesar_archivo("solu_expres.txt")
