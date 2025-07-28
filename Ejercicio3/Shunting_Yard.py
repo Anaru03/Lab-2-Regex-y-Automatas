@@ -37,3 +37,40 @@ def format_regex(regex):
         i += 1
     res += regex[-1]
     return res
+
+def infix_to_postfix(regex):
+    stack = []
+    postfix = ""
+    formatted = format_regex(regex)
+
+    print(f"\nProcesando: {regex}")
+    print(f"Regex formateado: {formatted}\n")
+
+    for c in formatted:
+        if c == '(':
+            stack.append(c)
+        elif c == ')':
+            while stack and stack[-1] != '(':
+                op = stack.pop()
+                if op != '.':  # no mostramos concatenador
+                    postfix += op
+            stack.pop()
+        elif c in ['|', '.', '?', '*', '+']:
+            while stack and get_precedence(stack[-1]) >= get_precedence(c):
+                op = stack.pop()
+                if op != '.':
+                    postfix += op
+            stack.append(c)
+        else:
+            postfix += c
+
+        print(f"Carácter: {c}  Pila: {stack}  Postfix: {postfix}")
+
+    while stack:
+        op = stack.pop()
+        if op != '.':
+            postfix += op
+
+    print(f"Postfix final: {postfix}")
+    print("-" * 30)
+    return postfix
