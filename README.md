@@ -3,10 +3,8 @@
 **Nombre:** Ruth de León  
 **Carné:** 22428  
 **Carrera:** Ingeniería en Ciencia de la Computación y Tecnologías de la Información  
-**Fecha de entrega:** 24 de julio de 2025  
+**Fecha de entrega:** 27 de julio de 2025  
 **Curso:** Teoría de la Computación
-
-# 📚 Laboratorio 2 - Expresiones Regulares y Autómatas
 
 Este repositorio contiene tres ejercicios que trabajan con expresiones regulares, verificación de balanceo y conversión de notaciones utilizando el algoritmo de **Shunting Yard**.
 
@@ -95,4 +93,5 @@ ab+c?
 ## 🔗 Referencia
 Pseudocódigo de Shunting Yard adaptado de:  
 [https://gist.github.com/gbrolo/1a80f67f8d0a20d42828fb3fdb7be4de](https://gist.github.com/gbrolo/1a80f67f8d0a20d42828fb3fdb7be4de)
+
 Video desarrollado para la explicación del código: (https://www.youtube.com/watch?v=SGKlfSNpEXM)  
